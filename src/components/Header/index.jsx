@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography, Box, Container, Button, Stack } from '@mui/material'
+import { Box, Container, Button, Stack } from '@mui/material'
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,7 +9,6 @@ import { sections } from '../../mockData/sections';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import { SafetyCheckSharp } from '@mui/icons-material';
 
 const Header = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -22,7 +21,7 @@ const Header = () => {
     };
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{ backgroundColor: 'white', py: 1, position:'fixed'}} elevation={0}>
+            <AppBar position="static" sx={{ backgroundColor: 'white', py: 1}} elevation={0}>
                 <Toolbar>
                     <Container >
                         <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} flexWrap={'wrap'}>
@@ -43,7 +42,7 @@ const Header = () => {
                                     </nav>
                                 </Box>
                                 <Box className={styles.responsiveMenu}>
-                                    <nav className={styles.responsiveNav} style={{ display: 'flex', alignItems: 'center' ,gap: '16px'}}>
+                                    <nav className={styles.responsiveNav} style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                                         <div>
                                             <Button
                                                 id="basic-button"
@@ -68,8 +67,8 @@ const Header = () => {
 
                                                     {sections.map(({ id, title, href }) => {
                                                         return (
-                                                            <MenuItem onClick={handleClose} >
-                                                                <Link to={href} underline="none" key={id} className={styles.link}>{title}</Link>
+                                                            <MenuItem onClick={handleClose} key={id}>
+                                                                <Link to={href} underline="none" className={styles.link}>{title}</Link>
                                                             </MenuItem>
                                                         )
                                                     })}
