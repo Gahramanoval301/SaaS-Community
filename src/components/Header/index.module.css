@@ -1,9 +1,37 @@
-.link{
-    text-decoration: none;
-    color: #000;
+.link {
+  text-decoration: none;
+  color: #000;
 }
-.link:hover{
-    text-decoration: underline;
-    text-decoration-color: #6B7CFF;
-    text-decoration-thickness: 3px;
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #6b7cff;
+  text-decoration-thickness: 3px;
 }
+.menuList {
+  overflow-y: scroll;
+}
+.menuList::-webkit-scrollbar {
+  display: none;
+}
+.responsiveMenu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+  .responsiveMenu {
+    display: block;
+  }
+
+}
+@media screen and (max-width: 438px){
+    .responsiveNav{
+        width:80vw;
+        justify-content: flex-end;
+    }
+
+}
+
+
