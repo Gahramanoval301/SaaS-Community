@@ -1,8 +1,14 @@
 import React from 'react'
+import PageContainer from '../../components/PageContainer'
+import Starting from '../../components/HomeComps/Starting'
+import FeatuesH from '../../components/HomeComps/FeaturesH'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <PageContainer>
+      <Starting />
+      <FeatuesH/>
+    </PageContainer>
   )
 }
 
