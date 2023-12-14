@@ -1,0 +1,27 @@
+
+.iconDiv {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f5f7;
+}
+.icon{
+    color:#373FFF
+}
+.paperContent {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .iconDiv {
+    width: 50px;
+    height: 45px;
+  }
+  .icon {
+    font-size: 17px;
+  }
+}
