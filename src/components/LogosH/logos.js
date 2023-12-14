@@ -1,0 +1,22 @@
+export const logos = [
+    {
+        id:0,
+        img:'/HomeSources/logoipsum1.svg',
+    },
+    {
+        id:1,
+        img:'/HomeSources/logoipsum2.svg',
+    },
+    {
+        id:2,
+        img:'/HomeSources/logoipsum3.svg',
+    },
+    {
+        id:3,
+        img:'/HomeSources/logoipsum4.svg',
+    },
+    {
+        id:4,
+        img:'/HomeSources/logoipsum5.svg',
+    }
+]
