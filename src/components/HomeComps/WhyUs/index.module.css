@@ -1,0 +1,23 @@
+.textGradient {
+  font-weight: 600;
+  background: linear-gradient(to right, #373fff #3acaf8 white white);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+.iconDiv {
+  width: 48px;
+  height: 48px;
+  background-color: #ffacac;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .iconDiv {
+    width: 35px;
+    height: 30px;
+    padding: 5px;
+  }
+}
