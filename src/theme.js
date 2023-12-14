@@ -4,10 +4,20 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#000',
+            ligth:'#fff'
         },
         secondary: {
             main: '#6B7CFF',
+            light:'#E0E4FC',
         },
     },
+    typography:{
+        h3:{
+            fontWeight:'bold'
+        },
+        h4:{
+            fontWeight:'bold',
+        }
+    }
 })
 export default theme;
