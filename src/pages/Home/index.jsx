@@ -6,6 +6,8 @@ import WhyUsH from '../../components/HomeComps/WhyUs'
 import CTAhome from '../../components/HomeComps/CTAhome'
 import Logos from '../../components/LogosH'
 import DiscoverMore from '../../components/HomeComps/DiscoverMoreH'
+import Features from '../../components/Features'
+import Testimonials from '../../components/HomeComps/Testimonials'
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <CTAhome />
       <Logos />
       <DiscoverMore />
+      <Features />
+      <Testimonials />
     </PageContainer>
   )
 }
