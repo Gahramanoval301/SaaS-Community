@@ -9,23 +9,33 @@ const WhyUsH = () => {
     return (
         <Container sx={{ minHeight: '60vh', display: 'flex', alignItems: 'center' }}>
             <Grid container spacing={4} sx={{ py: 5 }}>
-                <Grid item md={6}>
+                <Grid item xs={12} md={6}>
                     <Stack spacing={2}>
                         <Typography variant="h6" sx={{
-                           fontWeight:600,
-                           backgroundImage: 'linear-gradient(10deg, #373FFF, #3ACAF8, #3ACAF8)',
-                           WebkitBackgroundClip: 'text', color: ' transparent', backgroundClip: 'text'
+                            fontWeight: 600,
+                            backgroundImage: 'linear-gradient(10deg, #373FFF, #3ACAF8, #3ACAF8)',
+                            WebkitBackgroundClip: 'text', color: ' transparent', backgroundClip: 'text'
                         }}>Why should you work with us?</Typography>
-                        <Typography variant="h3" color="initial" sx={{ fontSize: { xs: '2rem', sm: '2.7rem' } }}>To upscale your business to the next level</Typography>
+                        <Typography variant="h3" color="initial"
+                            sx={{
+                                fontSize: { xs: '2rem', sm: '2.7rem' }
+                            }}>
+                            To upscale your business to the next level
+                        </Typography>
                         <Typography variant="body2" color="initial">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                             sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua
                             invidunt ut labore.</Typography>
                     </Stack>
                 </Grid>
-                <Grid item md={6}>
-                    <Stack spacing={3}>
-                        {array3length.map(() => {
-                            return <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', gap: 2 }}>
+                <Grid item xs={12} md={6}>
+                    <Stack sx={{ gap: { xs: 4, md: 7, lg: 4 } }}>
+                        {array3length.map((_, index) => {
+                            return <Box key={index} sx={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'flex-start',
+                                gap: 2
+                            }}>
                                 <Box className={styles.iconDiv} >
                                     <EastIcon sx={{ fontSize: { xs: "16px", sm: 'normal' } }} />
                                 </Box>

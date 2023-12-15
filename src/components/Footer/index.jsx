@@ -39,9 +39,9 @@ const Footer = () => {
                   </Box>
                   <Box>
                     <Typography variant="h6" color="white" sx={{ fontWeight: 600, mb: 1 }}>Subscribe to our Newsletter</Typography>
-                    <form style={{ display: 'flex'}} className={styles.form}>
+                    <form style={{ display: 'flex' }} className={styles.form}>
                       <TextField className={styles.textfield} id="outlined-basic" variant="outlined" placeholder='Enter your email' sx={{
-                        backgroundColor: '#2B2E3C', '& > .MuiInputBase-root': { color: '#fff'},
+                        backgroundColor: '#2B2E3C', '& > .MuiInputBase-root': { color: '#fff' },
                         '& .MuiOutlinedInput-notchedOutline': {
                           border: 'none',
                         },
@@ -49,7 +49,12 @@ const Footer = () => {
                           border: 'none',
                         }
                       }} />
-                      <Button className={styles.button} sx={{ backgroundColor: 'white', color: 'primary.main', fontWeight: 600, padding: '16px 35px', borderRadius: '12px', '&:hover': { backgroundColor: 'secondary.main' }, position: 'relative', right: '25px' }}>Subscribe</Button>
+                      <Button className={styles.button} sx={{
+                        backgroundColor: 'white', color: 'primary.main',
+                        '&:hover': { backgroundColor: 'secondary.main' }
+                      }}>
+                        Subscribe
+                      </Button>
                     </form>
                   </Box>
                 </Stack>
