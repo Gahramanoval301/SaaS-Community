@@ -6,8 +6,6 @@ import styles from './index.module.css'
 const Starting = () => {
     return (
         <Container>
-
-
             <Stack sx={{
                 py: 10,
                 backgroundImage: 'radial-gradient(#95c2c7, rgba(149, 194, 199, 0.5), rgba(235, 237, 250, 0.8), white, white)'
