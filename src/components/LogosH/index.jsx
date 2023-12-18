@@ -5,7 +5,7 @@ import { logos } from './logos'
 const Logos = () => {
     return (
         <Container sx={{py:5}}>
-            <Grid container>
+            <Grid container spacing={1}>
                 {logos.map(({id, img}) => {
                     return <Grid item key={id} xs={12} sm={6} lg={2.4}>
                         <Box>
