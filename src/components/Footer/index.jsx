@@ -1,14 +1,19 @@
 import React from 'react'
 import ViewPricingF from './ViewPricing'
-import { Typography, Box, Container, Grid, Button, Stack, TextField } from '@mui/material'
+import { Typography, Box, Container, Grid, Button, Stack, TextField, Divider } from '@mui/material'
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styles from './index.module.css'
+
 const Footer = () => {
   return (
     <>
       <ViewPricingF />
       <Box sx={{ backgroundColor: '#1e1f24', color: 'white', p: 5 }}>
         <Container>
-          <Stack>
+          <Stack spacing={5}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6} md={4} lg={2.6}>
                 <Typography variant="h6" color="white" sx={{ fontWeight: 600 }}>Compony</Typography>
@@ -39,9 +44,9 @@ const Footer = () => {
                   </Box>
                   <Box>
                     <Typography variant="h6" color="white" sx={{ fontWeight: 600, mb: 1 }}>Subscribe to our Newsletter</Typography>
-                    <form style={{ display: 'flex'}} className={styles.form}>
+                    <form style={{ display: 'flex' }} className={styles.form}>
                       <TextField className={styles.textfield} id="outlined-basic" variant="outlined" placeholder='Enter your email' sx={{
-                        backgroundColor: '#2B2E3C', '& > .MuiInputBase-root': { color: '#fff'},
+                        backgroundColor: '#2B2E3C', '& > .MuiInputBase-root': { color: '#fff' },
                         '& .MuiOutlinedInput-notchedOutline': {
                           border: 'none',
                         },
@@ -49,19 +54,33 @@ const Footer = () => {
                           border: 'none',
                         }
                       }} />
-                      <Button className={styles.button} sx={{ backgroundColor: 'white', color: 'primary.main', fontWeight: 600, padding: '16px 35px', borderRadius: '12px', '&:hover': { backgroundColor: 'secondary.main' }, position: 'relative', right: '25px' }}>Subscribe</Button>
+                      <Button className={styles.button} sx={{
+                        backgroundColor: 'white', color: 'primary.main',
+                        '&:hover': { backgroundColor: 'secondary.main' }
+                      }}>
+                        Subscribe
+                      </Button>
                     </form>
                   </Box>
                 </Stack>
               </Grid>
             </Grid>
-            <Box>
-
+            <Box >
+              <Divider sx={{ '&::before, &::after': { bgcolor: '#ffffff80' } }}>
+                <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', gap:3, flexWrap:{xs:'wrap', sm:'nowrap'}}}>
+                  <Typography variant="body1" color="#ffffff80">© Copyright Finsweet 2022</Typography>
+                  <Stack flexDirection={'row'}  sx={{color:'#ffffff80', gap:3}}>
+                    <FacebookRoundedIcon />
+                    <TwitterIcon />
+                    <InstagramIcon />
+                    <LinkedInIcon />
+                  </Stack>
+                </Box>
+              </Divider>
             </Box>
-
           </Stack>
         </Container>
-      </Box>
+      </Box >
     </>
   )
 }

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Typography, Box, Container, Button, Stack } from '@mui/material'
+import { Box, Container, Button, Stack } from '@mui/material'
 import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
@@ -9,7 +9,6 @@ import { sections } from '../../mockData/sections';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
-import { SafetyCheckSharp } from '@mui/icons-material';
 
 const Header = () => {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -20,30 +19,37 @@ const Header = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
+    
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" sx={{ backgroundColor: 'white', py: 1, position:'fixed'}} elevation={0}>
+            <AppBar position='static' sx={{ backgroundColor: 'white', py: 1 }} elevation={0}>
                 <Toolbar>
                     <Container >
-                        <Stack flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} flexWrap={'wrap'}>
+                        <Stack flexDirection={'row'}
+                            justifyContent={'space-between'}
+                            alignItems={'center'}
+                            flexWrap={'wrap'}
+                        >
                             <Box>
                                 <img src="/Logo.png" alt="Logo" />
                             </Box>
                             <Box>
                                 <Box className={styles.navbar}>
-                                    <nav style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                    <nav className={styles.navContainer}>
                                         <Stack flexDirection={'row'} sx={{ gap: 2 }}>
-                                            {sections.map(({ id, title, href }) => {
-                                                return (
-                                                    <Link to={href} underline="none" key={id} className={styles.link}>{title}</Link>
-                                                )
-                                            })}
+                                            {
+                                                sections.map(({ id, title, href }) => {
+                                                    return <Link to={href}
+                                                        underline="none"
+                                                        key={id}
+                                                        className={styles.link}>{title}</Link>
+                                                })}
                                         </Stack>
                                         <ButtonC title={'Free trial'} />
                                     </nav>
                                 </Box>
                                 <Box className={styles.responsiveMenu}>
-                                    <nav className={styles.responsiveNav} style={{ display: 'flex', alignItems: 'center' ,gap: '16px'}}>
+                                    <nav className={styles.responsiveNav}>
                                         <div>
                                             <Button
                                                 id="basic-button"
@@ -65,14 +71,13 @@ const Header = () => {
                                                 }}
                                             >
                                                 <Stack className={styles.menuList}>
-
-                                                    {sections.map(({ id, title, href }) => {
-                                                        return (
-                                                            <MenuItem onClick={handleClose} >
-                                                                <Link to={href} underline="none" key={id} className={styles.link}>{title}</Link>
+                                                    {
+                                                        sections.map(({ id, title, href }) => {
+                                                            return <MenuItem onClick={handleClose} key={id}>
+                                                                <Link to={href} underline="none"
+                                                                    className={styles.link}>{title}</Link>
                                                             </MenuItem>
-                                                        )
-                                                    })}
+                                                        })}
                                                 </Stack>
                                             </Menu>
                                         </div>

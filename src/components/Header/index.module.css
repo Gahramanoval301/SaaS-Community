@@ -1,3 +1,14 @@
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.responsiveNav{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .link {
   text-decoration: none;
   color: #000;
@@ -24,14 +35,10 @@
   .responsiveMenu {
     display: block;
   }
-
 }
-@media screen and (max-width: 438px){
-    .responsiveNav{
-        width:80vw;
-        justify-content: flex-end;
-    }
-
+@media screen and (max-width: 438px) {
+  .responsiveNav {
+    width: 80vw;
+    justify-content: flex-end;
+  }
 }
-
-
