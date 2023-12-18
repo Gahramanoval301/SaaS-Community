@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography, Box, Container, Button, Stack } from '@mui/material'
 import ButtonC from '../Button'
+import { Link } from 'react-router-dom'
 
 const ViewPricingF = () => {
     return (
@@ -9,7 +10,9 @@ const ViewPricingF = () => {
                 <Stack alignItems={'center'} justifyContent={'center'} spacing={2} >
                     <Typography variant="h3" color="initial" sx={{ fontWeight: 600, fontSize: { xs: '2.75rem', sm: '3.75rem' }, width: { xs: '100%', md: '70%' } }}>Are you ready to grow your business with us?</Typography>
                     <Typography variant="body1" color="initial">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</Typography>
-                    <ButtonC title={'View Pricing'} />
+                    <Link to={'/pricing'}>
+                        <ButtonC title={'View Pricing'} />
+                    </Link>
                 </Stack>
             </Container>
         </Box>

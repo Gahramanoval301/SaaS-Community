@@ -31,7 +31,9 @@ const Header = () => {
                             flexWrap={'wrap'}
                         >
                             <Box>
+                                <Link to={'/'}>
                                 <img src="/Logo.png" alt="Logo" />
+                                </Link>
                             </Box>
                             <Box>
                                 <Box className={styles.navbar}>
