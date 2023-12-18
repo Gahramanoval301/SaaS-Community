@@ -9,7 +9,7 @@ const FeaturesP = () => {
     <Box sx={{
       backgroundImage: 'linear-gradient(to right, rgba(155, 255, 165, 0.4), rgba(174, 211, 255, 0.7), rgba(212, 227, 250, 1), rgba(202, 207, 250, 0.8),rgba(202, 207, 250, 0.5))'
     }}>
-      <Container sx={{ pt: 10, pb: 2 }}>
+      <Container sx={{ pt: { xs: 3, md: 10 }, pb: 2 }}>
         <Stack spacing={3} justifyContent={'center'} alignItems={'center'}>
           <Typography variant="h3"
             sx={{

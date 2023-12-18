@@ -4,7 +4,7 @@ import styles from './index.module.css'
 
 const MarketingInsights = () => {
     return (
-        <Container sx={{ py: 10 }}>
+        <Container sx={{ py: { xs: 4, md: 10 } }}>
             <Grid container spacing={2} >
                 <Grid item md={6} >
                     <Stack className={styles.bgGradient} justifyContent={'center'}

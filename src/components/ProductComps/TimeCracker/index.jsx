@@ -4,7 +4,7 @@ import styles from './index.module.css'
 
 const TimeCracker = () => {
     return (
-        <Container sx={{ py: 10 }}>
+        <Container sx={{ py: { xs: 4, md: 10 } }}>
             <Grid container spacing={5} >
                 <Grid item md={6} className={styles.bgGradient} >
                     <Box sx={{ width: { xs: '100%', sm: '85%', md: '100%' }, margin: '0 auto' }}>

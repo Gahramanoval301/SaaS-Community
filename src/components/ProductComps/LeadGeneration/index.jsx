@@ -5,7 +5,7 @@ import styles from './index.module.css'
 const LeadGeneration = () => {
     return (
         <Box className={styles.bgGradient}>
-            <Container sx={{ py: 10 }}  >
+            <Container sx={{ py: { xs: 4, md: 10 } }}  >
                 <Grid container spacing={5} >
                     <Grid item md={6} >
                         <Stack justifyContent={'center'}

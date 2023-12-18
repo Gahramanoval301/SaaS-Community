@@ -1,11 +1,13 @@
 import React from 'react'
 import WebRouting from './routing'
+import RemoteTeams from './components/ProductComps/RemoteTeams'
 
 function App() {
 
   return (
-      <WebRouting />
-      
+    // <RemoteTeams />
+    <WebRouting />
+
   )
 }
 
