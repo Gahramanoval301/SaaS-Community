@@ -25,35 +25,37 @@ const PricingPlans = () => {
         console.log(isToggled);
     }
     return (
-        <Container sx={{ py: 5 }}>
-            <Stack spacing={5} sx={{ border: '1px solid red' }}>
-                <Stack spacing={2} justifyContent={'center'} alignItems={'center'}>
-                    <Box sx={{ width: { xs: '100%', sm: '70%', md: '40%' }, textAlign: 'center' }}>
-                        <Typography variant="h3" sx={{
-                            fontWeight: 600,
-                            fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }, mb: 1
-                        }}>
-                            Pricing plans that suit you
-                        </Typography>
-                        <Typography variant="body1">
-                            Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor.
-                        </Typography>
-                    </Box>
-                    <Box onClick={handleClick} className={styles.btn_group} >
-                        <Button className={styles.btn} style={style}>Monthly</Button>
-                        <Button className={styles.btn} style={style2}>Yearly</Button>
-                    </Box>
+        <Box className={styles.container}>
+            <Container sx={{ py: { xs: 4, md: 8 } }}>
+                <Stack spacing={5} >
+                    <Stack spacing={2} justifyContent={'center'} alignItems={'center'}>
+                        <Box sx={{ width: { xs: '100%', sm: '70%', md: '40%' }, textAlign: 'center' }}>
+                            <Typography variant="h3" sx={{
+                                fontWeight: 600,
+                                fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }, mb: 1
+                            }}>
+                                Pricing plans that suit you
+                            </Typography>
+                            <Typography variant="body1">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do eiusmod tempor.
+                            </Typography>
+                        </Box>
+                        <Box onClick={handleClick} className={styles.btn_group} >
+                            <Button className={styles.btn} style={style}>Monthly</Button>
+                            <Button className={styles.btn} style={style2}>Yearly</Button>
+                        </Box>
+                    </Stack>
+                    <Stack>
+                        <Grid container spacing={2}>
+                            {
+                                data.map(data => <PricingCard data={data} key={data.id} />
+                                )}
+                        </Grid>
+                    </Stack>
                 </Stack>
-                <Stack>
-                    <Grid container spacing={2}>
-                        {
-                            data.map(data => <PricingCard data={data} key={data.id} />
-                            )}
-                    </Grid>
-                </Stack>
-            </Stack>
-        </Container >
+            </Container >
+        </Box>
     )
 }
 
