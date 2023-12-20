@@ -1,0 +1,17 @@
+.textGradient {
+  background: linear-gradient(10deg, #141ad6, #27b2e0, #4ea9c7 40%);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600 !important;
+}
+.bgGradient {
+  background-image: radial-gradient(
+    #aed2ff6d,
+    #c9d4ef85,
+    #cacffa5e,
+    #9bffa520,
+    rgba(255, 255, 255, 0.428),
+    rgba(255, 255, 255, 0.421),
+    rgba(255, 255, 255, 0.703)
+  );
+}
