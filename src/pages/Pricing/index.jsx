@@ -1,8 +1,12 @@
 import React from 'react'
-
+import PageContainer from '../../components/PageContainer'
+import PricingPlans from '../../components/PricingComps/PricingPlans'
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <PageContainer>
+      <PricingPlans />
+    </PageContainer>
+
   )
 }
 
