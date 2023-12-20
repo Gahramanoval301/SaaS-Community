@@ -30,7 +30,7 @@ const Starting = () => {
                         backgroundColor: 'white',
                         padding: '5px',
                         borderRadius: '20px'
-                    }} >
+                    }}>
                         <TextField id="email" placeholder='Enter your email' className={styles.textfield} sx={{
                             borderRadius: '20px',
                             backgroundColor: 'white',
