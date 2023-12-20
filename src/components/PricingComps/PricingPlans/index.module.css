@@ -44,6 +44,7 @@
   border: 5px solid transparent;
   border-radius: 20px;
   transition: border, background-color 500ms;
+  cursor: pointer;
 }
 .cardDiv .card:hover {
   border: 5px solid #6b7cff;
