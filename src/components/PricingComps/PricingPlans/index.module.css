@@ -1,0 +1,49 @@
+.btn_group .btn {
+  padding: 14px 45px;
+  border-radius: 12px;
+  text-transform: none;
+  background-color: transparent;
+}
+.btn_group {
+  background-color: #e0e4fc;
+  border-radius: 20px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card_header .iconDiv {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(227, 225, 225);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plans .iconDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(155, 246, 184, 0.635);
+  border-radius: 50%;
+}
+
+.cardDiv .card {
+  border: 5px solid transparent;
+  border-radius: 20px;
+  transition: border, background-color 500ms;
+}
+.cardDiv .card:hover {
+  border: 5px solid #6b7cff;
+  background: linear-gradient(to bottom, #d7e7f9, #d5f4ec);
+}
+.cardDiv .card:hover .card_header .iconDiv {
+  background-color: #ffffff9d;
+  color: #6b7cff;
+}
