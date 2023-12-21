@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
-import { Typography, Box, Stack, Container, Grid, Button } from '@mui/material'
-import styles from './index.module.css'
-import RemoveIcon from '@mui/icons-material/Remove';
-import AddIcon from '@mui/icons-material/Add';
+import React from 'react'
+import { Typography, Stack, Container, Grid } from '@mui/material'
 import { data } from './data';
 import FAQitem from './FaqItem';
 

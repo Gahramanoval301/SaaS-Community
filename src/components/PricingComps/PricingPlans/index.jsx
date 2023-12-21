@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Typography, Box, Stack, Container, Grid, Button } from '@mui/material'
-import { useState } from 'react'
 import styles from './index.module.css'
 import { data } from './dataCards'
 import PricingCard from './PricingCard'
