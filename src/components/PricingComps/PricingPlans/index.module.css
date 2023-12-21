@@ -1,7 +1,13 @@
-.container{
-    background-image:radial-gradient(#AED3FF,#9bffa539,#c9d4ef53,#cacffa41,white 60%);
-    background-size: contain;
-    background-position: -10rem 1rem;
+.container {
+  background-image: radial-gradient(
+    #aed3ff,
+    #9bffa539,
+    #c9d4ef53,
+    #cacffa41,
+    white 60%
+  );
+  background-size: contain;
+  background-position: -10rem 1rem;
 }
 
 .btn_group .btn {
