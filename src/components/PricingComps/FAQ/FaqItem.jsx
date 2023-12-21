@@ -16,7 +16,7 @@ const FAQitem = ({ question, answer }) => {
     return (
         <Stack onClick={handleToggle}
             flexWrap={'wrap'}
-            spacing={3}
+            spacing={1}
             sx={{ backgroundColor: '#fff', borderRadius: '24px', padding: 3, cursor: 'pointer' }}>
             <Stack flexDirection={'row'}
                 justifyContent={'space-between'}
@@ -31,13 +31,14 @@ const FAQitem = ({ question, answer }) => {
                 </Box>
             </Stack>
             {
-                isToggled ?
-                    <Typography variant="body1" sx={{
-                        maxHeight: isToggled ? '500px' : '0',
-                        transition: 'max-height 0.3s ease-in-out',
-                    }}>
-                        {answer}
-                    </Typography> : null
+
+                <Typography variant="body1" sx={{
+                    overflow: 'hidden',
+                    maxHeight: isToggled ? '500px' : '0px',
+                    transition: 'all 0.3s ease-in-out',
+                }}>
+                    {answer}
+                </Typography>
             }
         </Stack>
     )
