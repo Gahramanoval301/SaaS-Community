@@ -11,7 +11,7 @@ const GoalsAndVisions = () => {
                     <Grid item xs={12} md={6}>
                         <Stack spacing={2} >
                             <Typography variant="h6" sx={{
-                                background: 'linear-gradient(to right, #141ad6, white, white)',
+                                background: 'linear-gradient(to right, #141ad6, white, rgb(5, 157, 245))',
                                 WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
                             }}>
                                 Our Goals
@@ -34,7 +34,7 @@ const GoalsAndVisions = () => {
                     <Grid item xs={12} md={6}>
                         <Stack spacing={2}>
                             <Typography variant="h6" sx={{
-                                background: 'linear-gradient(to right, #141ad6, #4ea9c7 )',
+                                background: 'linear-gradient(to right, #141ad6, white, rgb(5, 157, 245) )',
                                 color: 'transparent', WebkitBackgroundClip: 'text'
                             }}>
                                 Our Vision
