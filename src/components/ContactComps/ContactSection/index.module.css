@@ -1,11 +1,22 @@
-.contactContainer .contactContent {
+.contactContainer{
+  background-image: radial-gradient(
+    #aed3ff,
+    #2ccd6f2b,
+    #5ac37a2b,
+    white 50%
+  );
+  background-size: contain;
+  background-position: -20rem -5rem;
+}
+
+.inputsBox .contactContent {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.contactContent .iconBox {
+.inputsBox .iconBox {
   width: 50px;
   height: 50px;
   background-color: #6b7cff;
@@ -27,7 +38,7 @@
   background-color: #6b7cff;
 }
 @media screen and (max-width: 370px) {
-  .contactContainer .contactContent {
+  .inputsBox .contactContent {
     flex-direction: column;
     text-align: center;
   }
