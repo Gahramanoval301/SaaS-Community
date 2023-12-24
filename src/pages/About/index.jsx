@@ -1,8 +1,12 @@
 import React from 'react'
+import PageContainer from '../../components/PageContainer'
+import HeaderA from '../../components/AboutUsComps/Header'
 
 const About = () => {
   return (
-    <div>About</div>
+    <PageContainer>
+      <HeaderA />
+    </PageContainer>
   )
 }
 
