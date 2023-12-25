@@ -5,7 +5,7 @@ import Product from "../pages/Product"
 import Pricing from "../pages/Pricing"
 import Contact from "../pages/Contact"
 import Blog from "../pages/Blog"
-
+import BlogPost from "../pages/BlogPost"
 const WebRouting = () => {
     return (
         <Routes>
@@ -15,6 +15,7 @@ const WebRouting = () => {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/blogpost/:slug" element={<BlogPost />} />
         </Routes>
     )
 }
