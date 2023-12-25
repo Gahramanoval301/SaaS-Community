@@ -17,6 +17,12 @@ const theme = createTheme({
         },
         h4:{
             fontWeight:'bold',
+        },
+        h5:{
+            fontWeight:'bold'
+        },
+        h6:{
+            fontWeight:'bold'
         }
     }
 })
