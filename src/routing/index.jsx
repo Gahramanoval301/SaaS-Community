@@ -13,6 +13,7 @@ const WebRouting = () => {
             <Route path="/about-us" element={<About />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="" element={}/>
         </Routes>
     )
 }
