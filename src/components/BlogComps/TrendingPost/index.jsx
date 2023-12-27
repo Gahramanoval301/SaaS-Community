@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Grid, Stack, Typography } from '@mui/material'
+import { Container, Box, Stack, Typography } from '@mui/material'
 import TrendingPost from './TrendPost'
 import styles from './TrendPost/index.module.css'
 import { posts } from '../../../mockData/posts'

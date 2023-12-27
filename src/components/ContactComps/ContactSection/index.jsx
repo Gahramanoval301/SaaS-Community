@@ -25,7 +25,7 @@ const ContactSection = () => {
                                 sx={{ height: '100%', p: 1 }}>
                                 <Stack spacing={2} className={styles.inputsBox}>
                                     {
-                                        dataCards.map(({ id, contact, description, icon }) => {
+                                        dataCards.map(({ id, contact, description, icon, href }) => {
                                             return (
                                                 <Box className={styles.contactContent} key={id} >
                                                     <Box className={styles.iconBox}>
@@ -33,7 +33,9 @@ const ContactSection = () => {
                                                     </Box>
                                                     <Box>
                                                         <Typography variant='h6' sx={{ fontWeight: 600 }}>
-                                                            {contact}
+                                                            <a href={href} className={styles.link}>
+                                                                {contact}
+                                                            </a>
                                                         </Typography>
                                                         <Typography color='text.secondary'>
                                                             {description}

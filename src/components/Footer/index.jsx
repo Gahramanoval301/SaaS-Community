@@ -24,10 +24,10 @@ const Footer = () => {
                       {section.title}
                     </Typography>
                     {section.sections.map(subSection => (
-                      <Link to={subSection.to} style={{textDecoration:'none'}}>
-                      <Typography key={subSection.title} variant="body1" color="#ffffff80">
-                        {subSection.title}
-                      </Typography>
+                      <Link to={subSection.to} style={{ textDecoration: 'none' }} key={subSection.title} >
+                        <Typography variant="body1" color="#ffffff80">
+                          {subSection.title}
+                        </Typography>
                       </Link>
                     ))}
                   </Grid>

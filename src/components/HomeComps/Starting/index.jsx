@@ -51,7 +51,7 @@ const Starting = () => {
                 </form>
                 <Box sx={{ textAlign: 'center', width: { xs: '100%', sm: '85%' } }}>
                     <img src="/HomeSources/Dashboardimg.png"
-                        alt="Dasboard Image" style={{ width: '100%' }} />
+                        alt="Dasboard" style={{ width: '100%' }} />
                 </Box>
             </Stack >
         </Container>

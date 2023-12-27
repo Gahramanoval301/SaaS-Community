@@ -1,6 +1,6 @@
 import React from 'react'
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
-import { Container, Box, Grid, Stack, Typography } from '@mui/material'
+import { Container, Grid, Stack, Typography } from '@mui/material'
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';

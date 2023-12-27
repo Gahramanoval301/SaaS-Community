@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Grid, Stack, Typography } from '@mui/material'
+import { Container, Box, Stack, Typography } from '@mui/material'
 import ButtonC from '../../Button'
 import styles from './index.module.css'
 const CTAhome = () => {

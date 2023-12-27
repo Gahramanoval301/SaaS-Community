@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import RemoveIcon from '@mui/icons-material/Remove';
 import AddIcon from '@mui/icons-material/Add';
-import { Typography, Box, Stack, Grid, Button } from '@mui/material'
+import { Typography, Box, Stack } from '@mui/material'
 
 
 const FAQitem = ({ question, answer }) => {

@@ -26,15 +26,24 @@ const HeaderA = () => {
                         justifyContent={'center'}
                         alignItems={'center'}
                         sx={{ flexWrap: { xs: 'wrap', md: 'nowrap' } }}>
-                        <Box>
+                        <Box sx={{
+                            '&:hover':
+                                { transform: 'rotateY(180deg) scale(1.05)', transition: '500ms', }
+                        }}>
                             <img src="public/AboutUsSSectources/HeaderSect/person-using-macbook-pro-3861964.png"
                                 alt="person-using-macbook-pro" width={'100%'} />
                         </Box>
-                        <Box>
+                        <Box sx={{
+                            '&:hover':
+                                { transform: 'rotateY(180deg) scale(1.05)', transition: '500ms', }
+                        }}>
                             <img src="public/AboutUsSSectources/HeaderSect/man-working-from-home-5198252.png"
                                 alt="man-working-from-home" width={'100%'} />
                         </Box>
-                        <Box>
+                        <Box sx={{
+                            '&:hover':
+                                { transform: 'rotateY(180deg) scale(1.05)', transition: '500ms', }
+                        }}>
                             <img src="public/AboutUsSSectources/HeaderSect/people-working-in-front-of-the-computer-3184357.png"
                                 alt="people-working-in-front-of-the-computer" width={'100%'} />
                         </Box>
