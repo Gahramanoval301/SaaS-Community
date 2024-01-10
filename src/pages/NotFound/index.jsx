@@ -14,7 +14,7 @@ const NotFound = () => {
                 alignItems: 'center',
                 gap: '1rem'
             }}>
-                <Typography variant="h5" color="primary" component='h5'>
+                <Typography variant="h5" color="primary" component='h2'>
                     Oops...
                 </Typography>
                 <Link style={{
