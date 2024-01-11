@@ -26,7 +26,7 @@ const LeadGeneration = () => {
                     </Grid>
                     <Grid item md={6} sx={{ margin: '0 auto' }}>
                         <Box>
-                            <img src="public/ProductSources/StaticsH.png"
+                            <img src="/ProductSources/StaticsH.png"
                                 alt="Statistic Board" width={'100%'} />
                         </Box>
                     </Grid>

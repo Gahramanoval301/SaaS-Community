@@ -37,7 +37,7 @@ const Starting = () => {
                                 width: { xs: '100%', sm: '80%', md: '100%' },
                                 margin: '0 auto'
                             }}>
-                                <img src="public/ProductSources/Dashboardimg.png"
+                                <img src="/ProductSources/Dashboardimg.png"
                                     alt="Dashboard-statistic-schedule" width={'100%'} />
                             </Box>
                         </Grid>

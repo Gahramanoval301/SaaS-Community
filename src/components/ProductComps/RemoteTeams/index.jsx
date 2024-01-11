@@ -8,7 +8,7 @@ const RemoteTeams = () => {
             <Grid container spacing={5} >
                 <Grid item md={6} className={styles.bgGradient} >
                     <Box sx={{ width: { xs: '100%', sm: '85%', md: '100%' }, margin: '0 auto' }}>
-                        <img src="public/ProductSources/StatisticP.png"
+                        <img src="/ProductSources/StatisticP.png"
                             alt="Statistic Board 2" width={'100%'} />
                     </Box>
                 </Grid>

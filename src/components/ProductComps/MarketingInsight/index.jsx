@@ -25,7 +25,7 @@ const MarketingInsights = () => {
                 </Grid>
                 <Grid item md={6} sx={{ margin: '0 auto' }}>
                     <Box sx={{ width: { xs: '100%', sm: '85%', md: '100%' }, margin: '0 auto' }}>
-                        <img src="public/ProductSources/Statistic3.png"
+                        <img src="/ProductSources/Statistic3.png"
                             alt="Statistic Board" width={'100%'} />
                     </Box>
                 </Grid>
