@@ -3,6 +3,7 @@ import { Container, Box, Grid, Stack, Typography, Button } from '@mui/material'
 import Logos from '../../LogosH'
 import ButtonC from '../../Button'
 import styles from './style.module.css'
+import { Link } from 'react-router-dom'
 
 const Starting = () => {
     return (
@@ -27,7 +28,9 @@ const Starting = () => {
                                     <ButtonC title='Get Started' />
                                     <Button className={styles.button}
                                         sx={{ '&:hover': { bgcolor: 'secondary.main' } }}>
-                                        Contact Us
+                                        <Link to={'/contact'}>
+                                            Contact Us
+                                        </Link>
                                     </Button>
                                 </Box>
                             </Stack>
@@ -45,7 +48,7 @@ const Starting = () => {
                     <Logos />
                 </Stack>
             </Container >
-        </Box>
+        </Box >
 
     )
 }
