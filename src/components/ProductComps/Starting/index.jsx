@@ -28,7 +28,7 @@ const Starting = () => {
                                     <ButtonC title='Get Started' />
                                     <Button className={styles.button}
                                         sx={{ '&:hover': { bgcolor: 'secondary.main' } }}>
-                                        <Link to='/contact'>
+                                        <Link to='/contact' style={{ textDecoration: 'none', color: 'inherit' }}>
                                             Contact Us
                                         </Link>
                                     </Button>
