@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Typography, Box, Container, Grid, Card, CardContent, Button, Stack, TextField, Divider } from '@mui/material'
 import { featuresData } from './featuresData'
 import styles from './index.module.css'
@@ -15,7 +15,7 @@ const Features = () => {
                 <Grid container spacing={2}>
                     {featuresData.map(({ id, title, body, icon }) => {
                         return (
-                            <>
+                            <Fragment key={id}>
                                 <Grid item xs={12} sm={5.8} md={3.8} key={id}>
                                     <Card sx={{ backgroundColor: 'transparent' }} elevation={0}>
                                         <CardContent>
@@ -44,7 +44,7 @@ const Features = () => {
                                             sx={{ margin: '0 8px', display: { sm: 'none', md: 'block' } }} />
                                         : null
                                 }
-                            </>
+                            </Fragment>
                         )
                     })}
                 </Grid>
