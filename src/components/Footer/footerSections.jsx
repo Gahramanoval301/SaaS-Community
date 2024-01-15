@@ -7,7 +7,10 @@ export const footerSections = [
                 title: 'About Us',
                 to: '/about-us'
             },
-            { title: 'Why Choose us' },
+            {
+                title: 'Why Choose us',
+
+            },
             {
                 title: 'Pricing',
                 to: '/pricing'
@@ -22,7 +25,10 @@ export const footerSections = [
         sections: [
             { title: 'Privary Policy' },
             { title: 'Terms and Conditions' },
-            { title: 'Blog' },
+            {
+                title: 'Blog',
+                to: '/blog'
+            },
             {
                 title: 'Contact Us',
                 to: '/contact'
