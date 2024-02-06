@@ -36,7 +36,7 @@
   align-items: center;
 }
 
-.plans .iconDiv {
+.plans .iconDiv, .plans .iconDiv2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,9 @@
   background-color: rgba(155, 246, 184, 0.635);
   border-radius: 50%;
 }
-
+.plans .iconDiv2 {
+  background-color: rgba(237, 143, 127, 0.635);
+}
 .cardDiv .card {
   border: 5px solid transparent;
   border-radius: 20px;
