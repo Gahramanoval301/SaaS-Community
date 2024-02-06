@@ -1,5 +1,6 @@
 import React from 'react'
-import { Typography, Box, Stack, Container, Grid, Button, Divider } from '@mui/material'
+import CloseIcon from '@mui/icons-material/Close';
+import { Typography, Box, Stack, Grid, Divider } from '@mui/material'
 import TableChartIcon from '@mui/icons-material/TableChart';
 import CheckIcon from '@mui/icons-material/Check';
 import ButtonC from '../../Button';
@@ -29,17 +30,22 @@ const PricingCard = ({ data }) => {
                 <Divider />
                 <CardContent sx={{ padding: 4 }}>
                     <Stack spacing={2} className={styles.plans}>
-                        {data.plans.map((plan, index) =>
+                        {data.plans.map((plan_sect, index) =>
                             <Stack
                                 key={index}
                                 flexDirection={'row'}
                                 alignItems={'center'}
                                 sx={{ gap: 2 }}>
-                                <Box className={styles.iconDiv} >
-                                    <CheckIcon />
-                                </Box>
+                                {plan_sect.isAllowed ?
+                                    <Box className={styles.iconDiv} >
+                                        <CheckIcon />
+                                    </Box> :
+                                    <Box className={styles.iconDiv2} >
+                                        <CloseIcon />
+                                    </Box>
+                                }
                                 <Typography variant="body1" sx={{ fontWeight: 600 }}>
-                                    {plan}
+                                    {plan_sect.plan}
                                 </Typography>
                             </Stack>
                         )}
