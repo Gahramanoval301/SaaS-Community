@@ -19,9 +19,9 @@ const Header = () => {
     const handleClose = () => {
         setAnchorEl(null);
     };
-    
+
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1}}>
             <AppBar position='static' sx={{ backgroundColor: 'white', py: 1 }} elevation={0}>
                 <Toolbar>
                     <Container >
@@ -32,7 +32,7 @@ const Header = () => {
                         >
                             <Box>
                                 <Link to={'/'}>
-                                <img src="/Logo.png" alt="Logo" />
+                                    <img src="/Logo.png" alt="Logo" />
                                 </Link>
                             </Box>
                             <Box>
